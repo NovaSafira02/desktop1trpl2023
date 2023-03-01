@@ -6,6 +6,7 @@
 package Pertemuan2;
 
 import javax.swing.JButton;
+import javax.swing.JCheckBox;
 import javax.swing.JComboBox;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -44,14 +45,21 @@ public class TugasPertemuan2 {
         
         String[] amenu = {"mie ayam", "bakso", "mie becek"};
         JComboBox cbMenu = new JComboBox(amenu);
-        cbMenu
+        cbMenu.setBounds(150, 250, 200, 30);
+        j.add(cbMenu);
         
         JLabel JenisKelamin = new JLabel();
         JenisKelamin.setText(" Jenis Kelamin ");
         JenisKelamin.setBounds(50, 300, 100, 30);
         j.add(JenisKelamin);
-        JRadioButton radio1 = new JRadioButton();
         
+        JRadioButton jkRb1=new JRadioButton("Laki-Laki");    
+        JRadioButton jkRb2=new JRadioButton("Perempuan");    
+        jkRb1.setBounds(150,300,100,30);    
+        jkRb2.setBounds(250,300,100,30);  
+        j.add(jkRb1);
+        j.add(jkRb2);
+
         JLabel Alamat = new JLabel();
         Alamat.setText(" Alamat ");
         Alamat.setBounds(50, 350, 100, 30);
@@ -69,8 +77,6 @@ public class TugasPertemuan2 {
         noHpTxt.setBounds(150, 200, 200, 30);
         j.add(noHpTxt);
         
-        
-        
         JTextArea AlamatTxt = new JTextArea();
         AlamatTxt.setBounds(150, 350, 200, 60);
         j.add(AlamatTxt);
@@ -80,7 +86,6 @@ public class TugasPertemuan2 {
         PesanButton.setBounds(200, 450, 100, 30);
         j.add(PesanButton);
         
-
         j.setSize(800, 800);
         j.setLayout(null);
         j.setVisible(true);
